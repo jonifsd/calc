@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מחשבון </title>
+    <title>מחשבון מעוצב</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,6 +28,11 @@
             <button class="btn equals" onclick="calculate()">=</button>
             <button class="btn zero" onclick="appendNumber('0')">0</button>
             <button class="btn" onclick="appendNumber('.')">.</button>
+        </div>
+        <button class="btn history-btn" onclick="toggleHistory()">היסטוריה</button>
+        <div class="history" id="history">
+            <h3>היסטוריה</h3>
+            <ul id="historyList"></ul>
         </div>
     </div>
     <script src="script.js"></script>
